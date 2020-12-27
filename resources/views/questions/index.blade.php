@@ -3,7 +3,7 @@
 @section('content')
 <div class="container">
     <div class="row justify-content-center">
-        <div class="col-md-8">
+        <div class="col-md-12">
             <div class="card">
                 <div class="card-header">{{ __('All Questions') }}</div>
 
@@ -15,9 +15,6 @@
                                     {{ $question->title }}
                                 </h3>
                                 
-
-                                
-
                                  {{Illuminate\Support\Str::limit($question->body, 250)}} 
                                  
                             </div>
@@ -25,7 +22,7 @@
                         <hr>
                     @endforeach
 
-                    {{$questions->links()}}
+                    {{ $questions->links('pagination::bootstrap-4')}}
                 </div>
             </div>
         </div>
