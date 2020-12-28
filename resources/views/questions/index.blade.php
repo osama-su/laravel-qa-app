@@ -21,8 +21,11 @@
                         </div>
                         <hr>
                     @endforeach
+                        
+                            {{ $questions->links('pagination::bootstrap-4')}}
 
-                    {{ $questions->links('pagination::bootstrap-4')}}
+                        
+                    
                 </div>
             </div>
         </div>
