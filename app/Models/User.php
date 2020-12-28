@@ -48,5 +48,10 @@ class User extends Authenticatable
 
 
     }
+    public function getUrlAttribute(){
+
+        //return route("question.show", $this->id);
+        return "#";
+    }
    
 }
